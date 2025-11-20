@@ -118,7 +118,7 @@ export function Processing() {
                 </div>
                 <div className="bg-gray-50 rounded-lg p-6">
                   <div className="space-y-3">
-                    {selectedMethod.steps.split('1').map((step, index) => (
+                    {selectedMethod.steps.split('\1').map((step, index) => (
                       <div key={index} className="flex items-start space-x-3">
                         <div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
                           {index + 1}
