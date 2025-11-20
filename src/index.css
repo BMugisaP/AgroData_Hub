@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lora;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-forest-green text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all transform hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-cassava-brown text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all transform hover:-translate-y-0.5;
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 bg-maize-yellow text-gray-900 rounded-lg font-semibold hover:bg-opacity-90 transition-all transform hover:-translate-y-0.5;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold font-lora text-gray-900;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 max-w-3xl mx-auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d5f4f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3a32;
+}
